@@ -1,0 +1,16 @@
+{
+  "name": "log-nexus",
+  "version": "0.1.0",
+  "description": "A rebroadcasting syslog server",
+  "bin": "index.js",
+  "author": "Seth Fitzsimmons <seth@mojodna.net>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~3.4.7",
+    "ws": "~0.4.31",
+    "websocket-stream": "~0.4.0",
+    "buffertools": "~2.0.0",
+    "commander": "~2.1.0",
+    "cors": "~2.1.1"
+  }
+}
