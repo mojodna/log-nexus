@@ -28,7 +28,7 @@ log-nexus -s <syslog port> -p <http/ws port>
 To feed data in locally:
 
 ```bash
-tail -f /var/log/syslog | nc localhost 8515
+tail -f /var/log/syslog | nc localhost 8514
 ```
 
 Meanwhile:
