@@ -2,7 +2,7 @@
   "name": "log-nexus",
   "version": "0.1.0",
   "description": "A rebroadcasting syslog server",
-  "bin": "index.js",
+  "bin": "server.js",
   "author": "Seth Fitzsimmons <seth@mojodna.net>",
   "license": "ISC",
   "dependencies": {
