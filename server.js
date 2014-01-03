@@ -4,7 +4,6 @@
 var http = require("http");
 
 var InfinitePassThrough = require("./lib/infinite-passthrough"),
-    SkippingStream = require("./lib/skipping-stream"),
     makeApp = require("./lib/app"),
     makeSyslog = require("./lib/syslog"),
     makeWS = require("./lib/websocket");
@@ -19,7 +18,6 @@ var opts = require("commander")
   .option("-p, --port <port>", "HTTP/WS port (defaults to 8080)", parseInt, 8080)
   .parse(process.argv);
 
-// var nexus = new InfinitePassThrough().pipe(new SkippingStream()),
 var nexus = new InfinitePassThrough(),
     app = makeApp(nexus),
     server = http.createServer(app);
